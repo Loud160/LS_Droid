@@ -1,0 +1,13 @@
+This is the first public release of LS Droid and as such errors may be found. You can contribute help to correcting any errors found by submitting a screen shot of the error with a brief description of what you were doing and what took place prior to the error occurring. 
+
+If you experience an error while reading the pcm there is a chance the flash kernel may crash in the pmc's memory before it's able to exit the memory fully. If this happens the pcm will become unresponsive and the vehicle may fail to start. While this is very rare correcting the conditions is very simple, remove the negative battery cable for 30 seconds, this will clear the kernel from the pcm's memory and the pcm will return to normal operation once you reconnect the battery. 
+
+There is nothing written to the flash chip and nothing is erased from the pcm during the read process. There have been more than 1000 readouts and zero pcm's have been damaged.
+
+By using this app you accept full responsibility for anything that may occur.  
+
+Currently the ONLY devices supported are the OBDLink Lx and OBDLink Mx devices. 
+This app is ONLY designed to work on the P01 and P59 pcm’s used in many GM cars and Trucks from 1999 until early 2007. Attempting to use this app on other pcm’s may have undesirable results or cause damage to the pcm. 
+Due to the nature of proprietary operating systems created by commercial tuning companies you may encounter file formats LS Droid unable to read, in these cases you will need to use the software designed to work with the operating system in question. 
+Ls Droid uses a look up table to try and determine the correct pcm type and file size but there may be errors that result in a smaller then intended  file size being read, for example a P59 1mb pcm may be read as a P01 and generate a file size of 512K. If this happens I will need to know the Operating system number so I can update the file size. 
+
