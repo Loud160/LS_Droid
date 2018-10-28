@@ -1,0 +1,19 @@
+Turn the ignition on or the switched power if using a bench harness. Connect the Obdlink device to the DLC and then start the LS Droid app.  At no point once you start reading the pcm should the key be turned off unless instructed by the app or the read will be terminated and the app will likely crash. 
+
+*****Make sure you have had the pcm powered up for at least 30 seconds before trying to connect to your Bluetooth device or you will likely encounter an error. ******
+
+Start by pressing the red BT_Off button, this will bring up a list of available devices, select your Obdlink device and the app will try connecting to it. You will get a pop up screen asking if you agree with the terms of use, if you choose to agree then app will then configure the Obdlink device for reading with. If you choose not to agree to the apps conditions the app will close itself. 
+
+Once you accept the terms there will be a new button visible top center of the app that says ID_PCM, press the button and some data about the pcm will be read and the app will try to identify the size and type of the pcm to know what the appropriate file size should be. If the operating system or file size cannot be matched from the apps data base it will ask you to select the pcm’s file size as either 512K or 1mb. You will then get a pop up window with the amount of time expected to read the pcm’s file so you are aware of how long this will take. The P01/512K pcm’s can typically be read in 10-12 minutes, the P59/1mb pcm’s take more than 20 minutes and you should be prepared if you’re doing this in a vehicle. That means making sure the battery is capable of the key being on for the amount of time required, if you have day time running lights or other accessories running you may want to turn them off, this is a long time for a battery to keep a car turned on and not running. 
+
+Once the file size has been selected you can do one of three things. Read the contents of the pcm, change the vin number stored in the pcm or update the serial number of the pcm if it’s a P01/512K type pcm. To use either function press or hold the button that says Change next to the item you want to alter. You will get a pop up box for either the vin or serial number requesting that you input the new value to write to the Pcm. 
+
+Change Vin – The Vin number needs to be 17 characters long and should only include letters A-Z and numbers 0-9. The use of any symbol will have undesirable effects. 
+
+Change Serial - The serial number needs to be 12 characters long and should only include letters A-Z and numbers 0-9. The use of any symbol will have undesirable effects.  If the pcm has been identified as a P59/1mb the app will prevent you from trying to change the serial number since it is not working on those pcm’s at this time.  
+
+READ – this will read out the full contents of the pcm and save a file to the main storage area of your device once the read out is complete. While the pcm is being read you should not attempt to use your phone for anything else and just let the app run. Some phones will continue reading the pcm in the background while others will pause the app and the readout will fail. To be safe just let the app do its thing until it’s finished reading the pcm. 
+
+****** NOTE******
+If the vin number or serial number that are read by the app are incorrect or have odd characters showing  try pressing the ID_PCM button again. Due to the nature of Bluetooth it’s possible that data packets can be read out of order and will produce strange text if this happens. 
+
